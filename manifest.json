@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Fill Extension",
+    "version": "1.0",
+    "description": "Automatically fills in the user ID and clicks the login button.",
+    "permissions": ["storage", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+      {
+        "matches": ["https://nidp.tau.ac.il/nidp/saml2/sso*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
