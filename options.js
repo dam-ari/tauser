@@ -10,5 +10,7 @@ chrome.storage.sync.get("userId", (data) => {
     const userId = document.getElementById('userIdInput').value;
     chrome.storage.sync.set({ userId }, () => {
       alert('User ID saved!');
+      // Close the options page
+      window.close();
     });
   });

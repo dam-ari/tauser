@@ -30,7 +30,7 @@ function fillId() {
         );
         const loginButton = document.querySelector("#loginButton");
         if (loginButton) {
-          loginButton.click();
+          // loginButton.click();
           console.log("Clicked login button");
         } else {
           console.info("Login button not found");

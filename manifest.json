@@ -10,7 +10,9 @@
     "options_page": "options.html",
     "content_scripts": [
       {
-        "matches": ["https://nidp.tau.ac.il/nidp/saml2/sso*"],
+        "matches": ["https://nidp.tau.ac.il/nidp/saml2/sso*", 
+      "https://nidp.tau.ac.il/nidp/*",
+    "https://www.ims.tau.ac.il/*"],
         "js": ["content.js"]
       }
     ]
