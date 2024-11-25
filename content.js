@@ -10,7 +10,7 @@ function fillId() {
 
     if (data.userId) {
       // List of selectors to try
-      const selectors = ["#Ecom_User_Pid", "[name='id_number']"];
+      const selectors = ["#Ecom_User_Pid", "[name='id_number']", "[name='txtId']"];
       let userIdElement = null;
 
       // Loop through the selectors
